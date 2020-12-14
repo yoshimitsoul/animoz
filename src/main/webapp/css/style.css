@@ -1,0 +1,367 @@
+/*************************Animations***************************/
+#clin{
+    animation: clin 1s infinite;
+    top:190px;
+}
+
+@keyframes clin{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/******************************Animations*************************/
+
+
+html, body {
+	height: 100%;
+}
+
+body {
+	text-align: center;
+  	padding: 50px;
+  	background: #f9eeee;
+}
+
+h1 {
+	color:#66A2AB;	
+	font-size:1.5em;
+	margin-bottom:45px;
+}
+
+#titleAn {
+	color:#66A2AB;	
+	font-size:1.5em;
+	margin:10px;
+}
+
+#titleEn {
+	color:#66A2AB;	
+	font-size:1.7em;
+	margin:20px;
+	list-style:none;
+}
+
+h2 {
+	color:#66A2AB;	
+	font-size:1em;
+}
+
+.flex {
+	display: inline-block;
+	width:150px;
+}
+
+
+p {
+	font-size:0.8em;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight:bold; 
+  	color:#66A2AB;
+}
+
+#desc {
+	border:1px solid #FAAA79;
+	overflow:auto;
+	height : 100px;
+	margin:10px;
+}
+
+#effect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 195px;
+  height: 85px;
+  background: white;
+  border:2px solid #FAAA79;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size: 1em;
+  white-space:nowrap;
+  color:#666A89;
+  transition: 1s box-shadow;
+  text-decoration:none;
+}
+
+#effect:hover {
+  box-shadow: 0 5px 27px 0px rgba(0,0,0,.1);
+  color:#FAAA79;
+}
+
+#clin{
+	color:#FAAA79;
+	margin-top:30px;
+}
+
+.iphone {
+  	display: inline-block;
+  	vertical-align: middle;
+  	*vertical-align: auto;
+  	*zoom: 1;
+  	*display: inline;
+}
+
+.iphone {
+  	position: relative;
+}
+
+.iphone .steel_band {
+  	position: relative;
+  	width: 372px;
+  	height: 734px;
+  	padding: 3px;
+  	background: linear-gradient(to right, #dcdbda, #ebeae9);
+  	border-radius: 60px;
+  	box-shadow: inset 1px 0 0 #7e7c7a, inset -1px 0 1px #7e7c7a;
+}
+
+.iphone .plastic_band {
+  	width: 364px;
+  	height: 726px;
+  	padding: 4px;
+  	border-radius: 57px;
+  	background: #fff;
+  	box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.iphone .glass_face {
+  	position: relative;
+  	width: 364px;
+  	height: 726px;
+  	overflow: hidden;
+ 	background: linear-gradient(#fff, #e1abab);
+ 	border-radius: 53px;
+ 	box-shadow: -1px -1px 2px rgba(255, 255, 255, 0.15), -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.iphone .camera {
+  	position: absolute;
+  	z-index: 2;
+  	top: 22px;
+  	left: 55%;
+  	margin-left: -75px;
+  	height: 8px;
+  	width: 8px;
+  	padding: 2px;
+  	border: 1px solid rgba(255, 255, 255, 0.05);
+  	border-radius: 9px;
+  	box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.25);
+  	background: radial-gradient(5px 5px, #1b1b1b, #343434);
+  	background-position: top left;
+}
+.iphone .camera:after {
+  	display: block;
+  	height: 8px;
+  	width: 8px;
+  	border-radius: 4px;
+  	background: radial-gradient(1px 1px, #3c2b90 25%, rgb(48, 0, 144) 50%), radial-gradient(1px 1px, rgba(43, 93, 144, 0.75) 25%, rgba(43, 93, 144, 0) 50%), radial-gradient(1px 1px, rgba(43, 93, 144, 0.75) 25%, rgba(43, 93, 144, 0) 50%), radial-gradient(#07131b 40%, #1b3d70 60%);
+  	background-position: top left, center left, center, right center;
+  	content: "";
+}
+.iphone .speaker {
+  	position: absolute;
+  	z-index: 2;
+  	top: 20px;
+  	left: 55%;
+  	margin-left: -37px;
+  	width: 62px;
+  	height: 8px;
+  	padding: 5px;
+  	border-radius: 9px;
+  	background-size: 10px 10px, 100% 100%;
+  	background-position: bottom right, center;
+}
+.iphone .speaker:after {
+  	display: block;
+  	width: 62px;
+  	height: 8px;
+  	border-radius: 6px;
+  	background: linear-gradient(45deg, #000000 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, #000000 75%, #000000), #888;
+  	background-size: 2px 2px;
+  	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.75), inset 0 0 2px rgba(0, 0, 0, 0.5);
+  	content: "";
+}
+.iphone .home_button {
+  	position: absolute;
+  	bottom: 20px;
+  	left: 50%;
+  	margin-left: -35px;
+  	height: 70px;
+  	width: 70px;
+  	border-radius: 35px;
+  	background: linear-gradient(to right, #e1abab, #e1abab 60%);
+  	border: 1px solid #eee;
+  	box-shadow: 1px 1px 1px #222, inset 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.iphone .home_button:after {
+  	position: absolute;
+  	top: 23px;
+  	left: 23px;
+  	right: 23px;
+  	bottom: 23px;
+  	box-shadow: inset 0 0 1px #000, 0 0 1px #000;
+  	border-radius: 6px;
+  	content: "";
+}
+
+.iphone .screen {
+  	position: absolute;
+  	top: 55px;
+  	left: 50%;
+  	margin-left: -166px;
+  	width: 320px;
+  	height: 555px;
+  	padding: 5px;
+  	border: 1px solid lavender;
+  	background: white;
+}
+
+.iphone .mute_rocker {
+  	position: absolute;
+  	top: 90px;
+  	right: 100%;
+  	width: 2px;
+  	height: 32px;
+  	border: 1px solid #888;
+  	border-right: none;
+  	border-top-left-radius: 2px;
+  	border-bottom-left-radius: 2px;
+  	background: linear-gradient(#fbfbfb 5%, #dbdbdb 5%, #dbdbdb 50%, #aeaeae 75%, #fbfbfb 90%);
+}
+
+.iphone .volume {
+  	position: absolute;
+  	right: 100%;
+  	width: 2px;
+  	height: 25px;
+  	border: 1px solid #888;
+  	border-right: none;
+  	border-top-left-radius: 2px;
+  	border-bottom-left-radius: 2px;
+  	background: linear-gradient(#dbdbdb, #eeeeee 15%, #333333 75%, #fbfbfb 90%);
+}
+
+.iphone .volume.up {
+  	top: 160px;
+}
+
+.iphone .volume.down {
+  	top: 222px;
+}
+
+.iphone .sleep_wake {
+  	position: absolute;
+  	bottom: 100%;
+  	right: 70px;
+  	width: 60px;
+  	height: 3px;
+  	border: 1px solid #888;
+  	border-bottom: none;
+  	border-top-left-radius: 2px;
+  	border-top-right-radius: 2px;
+  	background: linear-gradient(to right, #aaaaaa, #ffffff 7%, #aaaaaa 15%, #dddddd 70%, #bbbbbb 85%, #eeeeee 93%, #aaaaaa);
+}
+
+
+/******************forms*****************************/
+
+#formulaire {
+	border:1px solid #FAAA79;
+	margin:30px;
+}
+
+ul {
+	list-style:none;
+	margin-left:0;
+	padding-left:0;
+}
+
+li {
+	margin-bottom:5px;
+	font-size:0.8em;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight:bold; 
+  	color:#66A2AB;
+}
+
+textarea {
+  	height: 30px;
+  	background-color:rgb(250, 222, 209);
+  	border:1px solid #FAAA79;
+  	border-radius: 75px;
+}
+
+input {
+	width:100px;
+	border:1px solid #FAAA79;
+	border-radius:75px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+button {
+	font-size:0.8em;
+	font-family: 'Montserrat', sans-serif;
+  	font-weight:bold; 
+  	background-color:#FAAA79;
+  	color:#66A2AB;
+  	width:70px;
+  	height:30px;
+  	margin-top: 20px;
+  	border-radius: 75px;
+}
+
+button:hover {
+  	background-color:rgb(208, 153, 115);
+  	box-shadow: 0 5px 27px 0px rgba(0,0,0,.1);
+}
+
+#effectbis {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 5px auto;
+  width: 130px;
+  height: 35px;
+  background: white;
+  border:2px solid #FAAA79;
+  border-radius: 75px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bold;
+  font-size: 0.7em;
+  white-space:nowrap;
+  color:#666A89;
+  transition: 1s box-shadow;
+  text-decoration:none;
+}
+
+#effectbis:hover {
+  box-shadow: 0 5px 27px 0px rgba(0,0,0,.1);
+  color:#FAAA79;
+}
+
+#effectter {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 5px auto;
+	width: 130px;
+	height: 35px;
+	background: white;
+	border:2px solid #FAAA79;
+	border-radius: 75px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size: 0.7em;
+	white-space:nowrap;
+	color:#666A89;
+	transition: 1s box-shadow;
+	text-decoration:none;
+}
+
